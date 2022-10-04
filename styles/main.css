@@ -1,188 +1,179 @@
- :root {
+:root {
+}
 
- }
- 
- .body {
-    font-family: 'Roboto', sans-serif;
- }
- .header {
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.body {
+  font-family: "Roboto", "sans-serif";
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-    width: 80px;
-    margin-left: 10px;
+  width: 80px;
+  margin-left: 10px;
 }
 .header-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 .bar {
-    color: white;
+  color: white;
 }
 .menu {
-    display: none;
+  display: none;
 }
 
-.main{ color:white}
-
-
-    .primera-seccion{background-color: #509bf5;
-        height:50vh;
-        position:absolute;
-        top: 5%;
+.main {
+  color: white;
 }
 
-      .button{ background-color: #20d760;
-        color:white;
-
+.hero {
+  padding: 60px 30px 30px 30px;
+  background-color: #0691ff;
+  color: white;
+  height: 50vh;
 }
-    .segunda-seccion{background-color: white;
-       
-        display:flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        position:absolute;
-        top:50%;
- 
 
+.hero-title {
+  max-width: 600px;
+  font-size: 3rem;
+  line-height: 55px;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.hero-plans {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  background-color: #4bb84a;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero-policy {
+  display: block;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.segunda-seccion {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .title {
-    color:black;
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 70px;
+  color: black;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
 }
 
-        .segunda-seccion img{
-            height:25%;
-             width:25%;
-             margin:0 5rem;
-            
-                      
+.segunda-seccion img {
+  height: 25%;
+  width: 25%;
+  margin: 0 5rem;
 }
-
 
 .elemento-lista {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 150px;
-   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 150px;
 }
 
 .texto-lista {
-   gap: 10px;
-   
+  gap: 10px;
 }
 
-
 .titulo-lista {
-    color:black;
-    font-size: 42px;
-    font-weight: bold;
-    padding-bottom: 40px;
+  color: black;
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 40px;
 }
 
 .subtitulo-lista {
-    font-size: 25px;
-    color: gray;
-
+  font-size: 25px;
+  color: gray;
 }
 
-
-.footer-spotify{background-color: black;
-    height:10vh;
-    
-    
-    
- 
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+  background-color: black;
 }
 
+.footer,
+.footer * {
+  font-size: 10px;
+  color: #999;
+}
 
-.footer-izquierda{color:white;
-    font-size: 14px;
+.footer-menu-links:hover {
+  color: white;
+}
+
+.footer-menu-items {
+  display: inline-block;
+}
+
+.footer-menu-links {
+  display: inline-block;
+  padding: 7px;
+}
+
+/* copy */
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.copy-year {
+  margin-top: 5px;
+}
+
+.copy-spain-flag {
+  margin-left: 5px;
+  height: 15px;
+  vertical-align: text-bottom;
+}
+
+@media all and (min-width: 778px) {
+  .header-icon {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .list-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left:3%;
-    width: 50%;
-    
+    gap: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+  }
+  .list-menu a {
+    color: white;
+    text-decoration: none;
+  }
 }
-
-
-
-
-.anuncios {
-    color:white;
-    font-size: 14px;
-    display:flex;
-    align-items: flex-end;
-    padding-top: 2%
-    
-}
-
-.legal{display:flex;
-flex-direction:row;
-gap:1%;
-padding-top: 10%;
-}
-
-.espana{color:white;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
-}
-
-.foto-espana {
-    display:flex;
-    padding-right:3%;
-    align-items: flex-end;
-    
-  
-}
-
-.spain{
-display:flex;
-justify-content:space-between;
-padding-right: 10%;
-padding-bottom:15%;
-font-size: 12px;
-
-
-}
-.copy{
-    padding-top:3%;
-    padding-right:3%;
-    font-size: 12px;
-}
-
-@media all and (min-width: 778px){
-    .header-icon {
-        display: none;
-    }
-    .menu {
-        display: block;
-    }
-    .list-menu {
-        display: flex;
-        gap: 10px;
-        margin-right: 10px;
-        list-style-type: none;
-    }
-    .list-menu a {
-        color: white;
-        text-decoration: none;
-    }
-   
- } 

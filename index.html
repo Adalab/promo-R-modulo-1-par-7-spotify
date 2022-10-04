@@ -30,16 +30,16 @@
     </header>
 
     <main class="main">
-      <section class="primera-seccion">
-        <h1>Prueba Premium gratis 3 meses</h1>
-        <h2>
-          Escucha millones de canciones sin anuncios, a la carta y sin conexión
+      <section class="hero">
+        <h1 class="hero-title">Prueba Premium gratis 3 meses</h1>
+        <h2 class="hero-subtitle">
+          Escucha millones de canciones sin anuncios, a la carta y sin conexión.
         </h2>
-        <button class="button">ver planes</button>
-        <h3>
-          Rigen términos y condiciones. Los 3 meses gratis no están disponibles
-          para usuarios que ya hayan probado premium
-        </h3>
+        <a class="hero-plans" href="#">Ver planes</a>
+        <small class="hero-policy">
+          Rigen términos y condiciones. Los tres meses gratis no están disponibles para usuarios que
+          ya hayan probado Premium.
+        </small>
       </section>
       
       <section class="segunda-seccion">
@@ -88,21 +88,26 @@
       </section>
     </main>
 
-    <footer class="footer-spotify">
-  
-      <ul class="footer-izquierda">
-        <div class="legal"><li>Legal</li>
-        <li>Contacto</li> </div>
-      
-        <li class="anuncios">Información sobre los anuncios</li>
-      </ul>
-
-      <ul class="espana">
-        <div class="foto-espana">
-        <li class="spain">España</li>
-        <li><img src="images-spotify/es.svg" /></li> </div>
-        <li class="copy">&copy; 2018 Spotify</li>
-      </ul>
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li class="footer-menu-items">
+            <a class="footer-menu-links" href="#">Legal</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-links" href="#">Cookies</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-links" href="#">Información sobre los anuncios</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copy">
+        <span class="copy-spain">España
+          <img class="copy-spain-flag" src="./images-spotify/es.svg" alt="Salta todas las canciones que quieras" /></span>
+        <span class="copy-year">&copy; 2020 Spotify AB</span>
+      </div>
     </footer>
+
   </body>
 </html>
