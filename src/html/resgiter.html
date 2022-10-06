@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrate en Spotify</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <img
+          src="./images/logo-spotify.png"
+          alt="logo-spotify"
+          title="Logo Spotify"
+        />
+      </h1>
+      <h2 class="title">regístrate gratis para escuchar.</h2>
+      <section class="socialMedia-register">
+        <input class="facebook" type="button" value="Regístrate con Facebook" />
+        <input class="google" type="button" value="Registrate con Google" />
+        <div>
+          <hr />
+          o
+          <hr />
+        </div>
+      </section>
+
+      <section class="form">
+        <h2>regístrate con tu correo electrónico</h2>
+
+        <form action="/register" method="post">
+          <label for="email">¿Cuál es tu correo electrónico?</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Pon tu correo electrónico."
+          />
+          <label for="okEmail">Confirma tu correo electrónico</label>
+          <input
+            type="email"
+            name="okEmail"
+            id="okEmail"
+            placeholder="Vuelve a poner tu correo electrónico."
+          />
+          <label for="password">Crea una contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Crea una contraseña."
+          />
+          <label for="userName">¿Cómo quieres que te llamemos?</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Pon un nombre de perfil."
+          />
+          <label for="infoUserName">Eso aparece en tu perfil</label>
+
+          <label for="birthday">¿Cuál es tu fecha de nacimiento?</label>
+          <label for="day">Día</label>
+          <input type="number" name="day" id="day" placeholder="DD" />
+          <label for="month">Mes</label>
+          <select name="month" id="month" aria-placeholder="Mes">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+          <label for="year">Año</label>
+          <input type="number" name="year" id="year" placeholder="AAAA" />
+
+          <h3>¿Cuál es tu género?</h3>
+          <label for="gender1"
+            ><input type="radio" name="gender1" id="gender1" />Mujer</label>
+          <label for="gender2"
+            ><input type="radio" name="gender2" id="gender2" />Hombre</label>
+          <label for="gender3"
+            ><input type="radio" name="gender3" id="gender3" />No binario</label>
+
+          <label for="newsletter"
+            ><input type="checkbox" name="newsletter" id="newsletter" />Quiero
+            que me enviéis novedades y ofertas de Spotify</label>
+          <label for="data">       
+            <input type="checkbox" name="data" id="data" />Compartir mis datos
+            de registro con los proveedores de contenidos de Spotify para fines
+            de marketing. Ten en cuenta que tus datos pueden ser trasnferidos a
+            un país fuera de EEE, tal y como se recoge en nuestra política de
+            privacidad.</label>
+
+            <input type="submit" value="Registarse">
+        </form>
+        <p>¿Ya tienes cuenta? <a href="">Inicia sesión</a></p>
+      </section>
+    </main>
+  </body>
+</html>
